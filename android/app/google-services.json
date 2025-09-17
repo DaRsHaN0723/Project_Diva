@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "288488564202",
+    "project_id": "smart-samai",
+    "storage_bucket": "smart-samai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288488564202:android:09671d93146650f570fe93",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxzZWqT5iYOI8MzvkWJMN62LQNBH9UQj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
