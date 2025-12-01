@@ -1,8 +1,10 @@
 plugins {
     id("com.android.application")
-    // ADD THIS LINE
-    id("com.google.gms.google-services") 
+    // START: FlutterFire Configuration
+    id("com.google.gms.google-services")
+    // END: FlutterFire Configuration
     id("kotlin-android")
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
 
@@ -11,6 +13,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     
+    // Firebase dependencies would look like this:
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
     implementation("com.google.firebase:firebase-analytics")
     
@@ -20,7 +23,7 @@ dependencies {
 
 android {
     namespace = "com.example.flutter_application_1"
-    compileSdk = 36 // This is correct
+    compileSdk = 36 // Use at least 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -35,7 +38,7 @@ android {
     defaultConfig {
         applicationId = "com.example.flutter_application_1"
         minSdk = flutter.minSdkVersion
-        targetSdk = 36 // This is correct
+        targetSdk = 34 // Use at least 34
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -50,6 +53,4 @@ android {
 flutter {
     source = "../.."
 }
-
-// ADD THIS LINE AT THE BOTTOM
-apply(plugin = "com.google.gms.google-services")
+apply (plugin = "com.google.gms.google-services")

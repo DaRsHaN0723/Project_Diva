@@ -64,6 +64,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '288488564202',
     projectId: 'smart-samai',
     storageBucket: 'smart-samai.firebasestorage.app',
+    iosClientId: '288488564202-ggahv25vosabdc16eaetjngmi0ou8t6r.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterApplication1',
   );
 
@@ -73,6 +74,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '288488564202',
     projectId: 'smart-samai',
     storageBucket: 'smart-samai.firebasestorage.app',
+    iosClientId: '288488564202-ggahv25vosabdc16eaetjngmi0ou8t6r.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterApplication1',
   );
 
